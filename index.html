@@ -267,17 +267,14 @@
                     </div>
                     <div class="contact-left">
                         <h3>.......Feedback here.......</h3>
+                        <!-- <p>Please support by rating me.</p> -->
                         <marquee behavior="" direction="left">I'm working on this module.</marquee>
                         <form id="feedbackform" action="" method="GET">    
-                            <p>Please support by rating me.</p>
-                            <div id="rating" class="rating">
-                                <p value="1star" id="1star"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p value="2star" id="2star"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p value="3star" id="3star"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p value="4star" id="4star"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p value="5star" id="5star"><i class="fa-sharp fa-solid fa-star"></i></p>
+                            <div class = "form-control">
+                                <input type="text" id="name" class="form-control" placeholder="Your name here...">
+                                <h6>Error Message</h6>
                             </div>
-                            <p>OR</p>
+                            
                             <div class = "form-control">
                                 <select name="" id="optns" class = "form-control">
                                     <option value="none">Select options</option>
@@ -288,16 +285,23 @@
                                 </select>
                                 <h6>Error Message</h6>
                             </div>
+                            <p>OR</p>
+                            <div id="rating" class="rating">
+                                <p id="1star" onclick="str1fun()" value="1"><i class="fa-sharp fa-solid fa-star"></i></p>
+                                <p id="2star" onclick="str2fun()" value="2"><i class="fa-sharp fa-solid fa-star"></i></p>
+                                <p id="3star" onclick="str3fun()" value="3"><i class="fa-sharp fa-solid fa-star"></i></p>
+                                <p id="4star" onclick="str4fun()" value="4"><i class="fa-sharp fa-solid fa-star"></i></p>
+                                <p id="5star" onclick="str5fun()" value="5"><i class="fa-sharp fa-solid fa-star"></i></p>
+                            </div>
                             
-                            <p>optional......</p>
                             <div class = "form-control">
-                                <input type="text" id="cmnt" class="form-control" placeholder="Your comment here...">
+                                <input type="text" id="cmnt" class="form-control" placeholder="Your suggetion(optional)...">
                                 <h6>Error Message</h6>
                             </div>
                             
                             <button type="submit" id="submitt" class="btn-submit btn">Submit</button>
                         </form>
-                    </div>
+                    </div>                           
                 </div>
             </div>
         </section>
