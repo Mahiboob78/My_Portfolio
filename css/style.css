@@ -36,6 +36,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  overflow: hidden;
 }
 .vh-100 {
   min-height: 100vh;
