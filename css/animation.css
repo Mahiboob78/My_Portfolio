@@ -1,0 +1,84 @@
+.home-right {
+    width: 100%;
+    animation: rightSlide 1.5s ease-in-out forwards;
+  }
+  @keyframes rightSlide {
+    0% {
+      transform: translateX(300px) scale(.3);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
+#hello{
+  transform: translateY(700px);
+  animation: slideUp .5s ease forwards .3s;
+}
+.name_title{
+  transform: translateY(600px);
+  animation: slideUp .8s ease forwards .5s;
+}
+.home-left p{
+  transform: translateY(500px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+.btn{
+  transform: translateY(400px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+.about-right{
+  transform: translateY(800px);
+  animation: slideUp .8s ease forwards .5s;
+}
+.about-right p{
+  transform: translateY(700px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+.personal_info{
+  transform: translateY(600px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.about-left {
+  width: 100%;
+  animation: leftSlide 1.5s ease-in-out forwards;
+}
+@keyframes leftSlide {
+  0% {
+    transform: translateX(-300px) scale(.3);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+.contact-left {
+  width: 100%;
+  animation: abtleftSlide 1.5s ease-in-out forwards;
+}
+@keyframes abtleftSlide {
+  0% {
+    transform: translateX(-300px) scale(.3);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+.contact-right {
+  width: 100%;
+  animation: abtrightSlide 1.5s ease-in-out forwards;
+}
+@keyframes abtrightSlide {
+  0% {
+    transform: translateX(300px) scale(.3);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
