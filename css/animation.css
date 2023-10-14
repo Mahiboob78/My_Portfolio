@@ -24,7 +24,7 @@
 }
 .btn{
   transform: translateY(400px);
-  animation: slideUp .8s ease-in-out  forwards 1s;
+  animation: slideUp .8s ease-in-out  forwards .7s;
 }
 .about-right h2{
   transform: translateY(700px);
