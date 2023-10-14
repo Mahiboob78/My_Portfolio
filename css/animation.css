@@ -4,7 +4,7 @@
   }
   @keyframes rightSlide {
     0% {
-      transform: translateX(300px) scale(.3);
+      transform: translateX(500px) scale(.1);
     }
     100% {
       transform: translateX(0px) scale(1);
@@ -20,14 +20,14 @@
 }
 .home-left p{
   transform: translateY(500px);
-  animation: slideUp .8s ease-in-out forwards .8s;
+  animation: slideUp .8s ease-in-out forwards .7s;
 }
 .btn{
   transform: translateY(400px);
   animation: slideUp .8s ease-in-out  forwards 1s;
 }
-.about-right{
-  transform: translateY(800px);
+.about-right h2{
+  transform: translateY(700px);
   animation: slideUp .8s ease forwards .5s;
 }
 .about-right p{
@@ -35,7 +35,7 @@
   animation: slideUp .8s ease-in-out forwards .8s;
 }
 .personal_info{
-  transform: translateY(600px);
+  transform: translateY(500px);
   animation: slideUp .8s ease-in-out  forwards 1s;
 }
 @keyframes slideUp {
