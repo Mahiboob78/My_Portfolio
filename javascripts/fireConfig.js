@@ -10,38 +10,54 @@ const firebaseConfig = {
 
 // initialize firebase
 firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
-// reference your database
-var contactFormDB = firebase.database().ref("contactForm");
+let ratingV;
 
+const starIcons = document.querySelectorAll('.rating i');
+starIcons.forEach(starIcon => {
+  starIcon.addEventListener('click', () => {
+    const feed = starIcon.getAttribute('value');
+    ratingV = feed;
+    });
+});
+
+//*************************** USERS DATA ****************************************** */
 function submitData() {
-  // e.preventDefault();
-
   var name = getElementVal("username");
   var mobNum = getElementVal("mobNum");
   var emailid = getElementVal("email");
   var msgContent = getElementVal("message");
-
   saveMessages(name, mobNum, emailid, msgContent);
-
-  // console.log(name);
   alert("Data Sent Successfully");
-
   // reset the form
   document.getElementById("userdata").reset();
 }
 
 const saveMessages = (name, mobNum, emailid, msgContent) => {
-    
-  firebase
-  .database()
-  .ref("contactForm/" + mobNum)
-  .set({
+  db.collection("users").add({
     name: name,
     mobile_num: mobNum,
     emailid: emailid,
     msgContent: msgContent,
-  });
+  })
+
+};
+
+//******************************** FEEDBACK ************************************** */
+function sendData() {
+  var nameV = getElementVal("name");
+  saveFeedback(nameV, ratingV);
+  alert("Feedback Submitted Successfully");
+  // reset the form
+  document.getElementById("feedbackform").reset();
+}
+
+const saveFeedback = (nameV, ratingV) => {
+  db.collection("feedback").add({
+    Name: nameV,
+    Rating: ratingV,
+  })
 };
 
 const getElementVal = (id) => {
