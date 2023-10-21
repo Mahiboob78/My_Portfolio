@@ -4,15 +4,6 @@ const mobNumInput = document.querySelector('#mobNum');
 const emailInput = document.querySelector('#email');
 const msgInput = document.querySelector('#message');
 
-const strInput = document.querySelector('#rating');
-const slctInput = document.querySelector('#optns');
-
-document.getElementById("submitt").onclick = function (e) {
-    alert('Namaste!!!')
-    // sendData();
-    e.preventDefault();
-};
-
 form.addEventListener('submit', (event)=>{
     
     validateForm();
@@ -73,7 +64,6 @@ function validateForm() {
     }else {
         setSuccess(msgInput);
     }
-
     
 }
 
