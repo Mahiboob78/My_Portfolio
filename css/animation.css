@@ -28,9 +28,9 @@
 }
 .about-right h2{
   transform: translateY(700px);
-  animation: slideUp .8s ease forwards .5s;
+  animation: slideUp .8s ease forwards .6s;
 }
-.about-right p{
+.about-right .para{
   transform: translateY(700px);
   animation: slideUp .8s ease-in-out forwards .8s;
 }
