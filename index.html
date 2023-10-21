@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <!----------- font awesome ----------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <!----------- css pages ----------->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -61,7 +61,7 @@
                     <div class="home-left">
                         <div class="home-content">
                             <h2 id="hello">Hello I'm</h2>
-                                <h2 class="name_title"><span class="name">Mahiboob Ali</span><br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000" data-words='["UI/UX Designer", "Frontend Developer", "FullStack Developer"]'></span></h2>              
+                            <h2 class="name_title"><span class="name">Mahiboob Ali</span><br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000" data-words='["UI/UX Designer", "Frontend Developer", "FullStack Developer"]'></span></h2>              
                         </div>
                         <p>I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional React Templates.</p>
                         
@@ -87,18 +87,22 @@
                     </div>
                     <div class="about-right">
                         <h2>UI/UX Designer & Web Developer</h2>
-                        <p class="lead">As a frontend developer with 2 years of experience, I am passionate about designing and developing web applications with a premium touch. <br>
-                            “As a programmer, it is your job to put yourself out of business. What you do today can be automated tomorrow.” - Doug McIlroy</p>
+                        <p class="lead">
+                            <div class="para">
+                                As a frontend developer with 2 years of experience, I am passionate about designing and developing web applications with a premium touch. <br>
+                                “As a programmer, it is your job to put yourself out of business. What you do today can be automated tomorrow.” - Doug McIlroy
+                            </div>
+                        </p>
                         <p class="lead">
                             <div class="personal_info"><br>
-                                <div class=" "> Name: Mahiboob B</div>
-                                <div class=" "> Birthday: 26 June 1999</div>
-                                <div class=" "> Education: Bachelor of Computer Application</div>
-                                <div class=" "> Experience: 1.8 Years</div>
-                                <div class=" "> Phone: +91 8310069342</div>
-                                <div class=" "> Email: mahiboobali498@gmail.com</div>
-                                <div class=" "> Address: Doddakanneli, Bengaluru-35</div>
-                                <div class=" "> Freelance: Available</div>
+                                <div> Name: Mahiboob B</div>
+                                <div> Birthday: 26 June 1999</div>
+                                <div> Education: Bachelor of Computer Application</div>
+                                <div> Experience: 1.8 Years</div>
+                                <div> Phone: +91 8310069342</div>
+                                <div> Email: mahiboobali498@gmail.com</div>
+                                <div> Address: Doddakanneli, Bengaluru-35</div>
+                                <div> Freelance: Available</div>
                             </div>
                         </p>
                     </div>
@@ -143,6 +147,10 @@
                             <div class="skills">
                                 <h2>Backend Skills</h2>
                                 <li>
+                                    <h3>NextJs 90%</h3>
+                                    <span class="bar"><span class="python"></span></span>
+                                </li>
+                                <li>
                                     <h3>Python 90%</h3>
                                     <span class="bar"><span class="html"></span></span>
                                 </li>
@@ -153,10 +161,6 @@
                                 <li>
                                     <h3>SQL 85%</h3>
                                     <span class="bar"><span class="javascript"></span></span>
-                                </li>
-                                <li>
-                                    <h3>GIT 90%</h3>
-                                    <span class="bar"><span class="python"></span></span>
                                 </li>
                             </div>
                         </div>
@@ -179,7 +183,7 @@
                                     <span class="bar"><span class="javascript"></span></span>
                                 </li>
                                 <li>
-                                    <h3>Locofy 90%</h3>
+                                    <h3>Git 90%</h3>
                                     <span class="bar"><span class="python"></span></span>
                                 </li>
                             </div>
@@ -267,41 +271,36 @@
                     </div>
                     <div class="contact-left contact-right">
                         <h3>.......Feedback here.......</h3>
-                        <!-- <p>Please support by rating me.</p> -->
-                        <marquee behavior="" direction="left">I'm working on this module.</marquee>
+                        <marquee behavior="" direction="left">"Please support me by providing a rating."</marquee>
                         <form id="feedbackform" action="" method="GET">    
                             <div class = "form-control">
                                 <input type="text" id="name" class="form-control" placeholder="Your name here...">
                                 <h6>Error Message</h6>
                             </div>
                             
-                            <div class = "form-control">
-                                <select name="" id="optns" class = "form-control">
-                                    <option value="none">Select options</option>
-                                    <option value="awesome">Awesome</option>
-                                    <option value="good">Good</option>
-                                    <option value="average">Average</option>
-                                    <option value="improve">Need to improve</option>
-                                </select>
-                                <h6>Error Message</h6>
-                            </div>
-                            <p>OR</p>
-                            <div id="rating" class="rating">
-                                <p id="1star" onclick="str1fun()" value="1"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p id="2star" onclick="str2fun()" value="2"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p id="3star" onclick="str3fun()" value="3"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p id="4star" onclick="str4fun()" value="4"><i class="fa-sharp fa-solid fa-star"></i></p>
-                                <p id="5star" onclick="str5fun()" value="5"><i class="fa-sharp fa-solid fa-star"></i></p>
-                            </div>
-                            
-                            <div class = "form-control">
-                                <input type="text" id="cmnt" class="form-control" placeholder="Your suggetion(optional)...">
-                                <h6>Error Message</h6>
+                            <div class="feedbackbox">
+                                <div class="emoji">
+                                    <div id="emoji">
+                                        <img src="images/emojis/poor.png" alt="">
+                                        <img src="images/emojis/bad.png" alt="">
+                                        <img src="images/emojis/okay.png" alt="">
+                                        <img src="images/emojis/good.png" alt="">
+                                        <img src="images/emojis/excellent.png" alt="">
+                                    </div>                
+                                </div>
+                                
+                                <div class="rating" id="rating">
+                                    <i class="fas fa-star" value="poor"></i>
+                                    <i class="fas fa-star" value="bad"></i>
+                                    <i class="fas fa-star" value="okay"></i>
+                                    <i class="fas fa-star" value="good"></i>
+                                    <i class="fas fa-star" value="excellent"></i>
+                                </div>
                             </div>
                             
                             <button type="submit" id="submitt" class="btn-submit">Submit</button>
                         </form>
-                    </div>                           
+                    </div>
                 </div>
             </div>
         </section>
@@ -342,7 +341,7 @@
                         </a>
                     </li>
                 </ul>
-                <h3>Doddakanneli, Carmelaram P.O, Sarjapura main road, Bengaluru-35 </h3>
+                <h3>Doddakannelli, Carmelaram P.O, Sarjapura main road, Bengaluru-35 </h3>
             </div>
         </div>
     </footer>
@@ -371,13 +370,62 @@
         }; 
     </script>
 
+    <script>
+        var stars = document.getElementsByClassName("fa-star");
+        var emoji = document.getElementById("emoji");
+
+        stars[0].onclick = function(){
+            stars[0].style.color = '#ffd93b';
+            stars[1].style.color = '#e4e4e4';
+            stars[2].style.color = '#e4e4e4';
+            stars[3].style.color = '#e4e4e4';
+            stars[4].style.color = '#e4e4e4';
+            emoji.style.transform = "translateX(0)"
+        }
+        stars[1].onclick = function(){
+            stars[0].style.color = '#ffd93b';
+            stars[1].style.color = '#ffd93b';
+            stars[2].style.color = '#e4e4e4';
+            stars[3].style.color = '#e4e4e4';
+            stars[4].style.color = '#e4e4e4';
+            emoji.style.transform = "translateX(-100px)"
+        }
+        stars[2].onclick = function(){
+            stars[0].style.color = '#ffd93b';
+            stars[1].style.color = '#ffd93b';
+            stars[2].style.color = '#ffd93b';
+            stars[3].style.color = '#e4e4e4';
+            stars[4].style.color = '#e4e4e4';
+            emoji.style.transform = "translateX(-200px)"
+        }
+        stars[3].onclick = function(){
+            stars[0].style.color = '#ffd93b';
+            stars[1].style.color = '#ffd93b';
+            stars[2].style.color = '#ffd93b';
+            stars[3].style.color = '#ffd93b';
+            stars[4].style.color = '#e4e4e4';
+            emoji.style.transform = "translateX(-300px)"
+        }
+        stars[4].onclick = function(){
+            stars[0].style.color = '#ffd93b';
+            stars[1].style.color = '#ffd93b';
+            stars[2].style.color = '#ffd93b';
+            stars[3].style.color = '#ffd93b';
+            stars[4].style.color = '#ffd93b';
+            emoji.style.transform = "translateX(-400px)"
+        }
+    </script>
+
     <!-- typewriting js -->
     <script src="javascripts/typewriting.js"></script>
-
+    <!-- validation scripts -->
     <script src="javascripts/validationScript.js"></script>
-
+    <script src="javascripts/rating_script.js"></script>
+    <!-- firebase connection -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script> 
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
     <script src="javascripts/fireConfig.js"></script>
+    
 </body>
 </html>
